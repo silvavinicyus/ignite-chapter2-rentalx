@@ -21,7 +21,9 @@ Primeiro clone o projeto na sua máquina por meio do comando:
 $ git clone https://github.com/silvavinicyus/ignite-rentx.git
 ~~~
 
-Depois de clonar o projeto instale as dependências e packages utilizados no projeto por meio do comando. **o comando precisa ser dado na raiz do projeto** :
+Depois de clonar o projeto instale as dependências e packages utilizados no projeto por meio do comando:
+
+(**o comando precisa ser dado na raiz do projeto**)
 
 ~~~git
 $ yarn
