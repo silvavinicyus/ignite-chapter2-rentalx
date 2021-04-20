@@ -38,7 +38,7 @@ export class CreateCars1618279742750 implements MigrationInterface {
           },
           {
             name: 'brand',
-            type: 'numeric',
+            type: 'varchar',
           },
           {
             name: 'category_id',
