@@ -5,7 +5,7 @@ import {
   ISpecificationsRepository,
 } from '@modules/cars/repositories/ISpecificationsRepository';
 
-import Specification from './entities/Specification';
+import Specification from '../entities/Specification';
 
 export default class SpecificationsRepository
   implements ISpecificationsRepository {
