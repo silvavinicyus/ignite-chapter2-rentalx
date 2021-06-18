@@ -17,8 +17,8 @@ describe('Create Rental', () => {
     rentalsRepositoryInMemory = new RentalsRepositoryInMemory();
     dayjsDateProvider = new DayjsDateProvider();
     createRentalUseCase = new CreateRentalUseCase(
-      dayjsDateProvider,
-      rentalsRepositoryInMemory
+      rentalsRepositoryInMemory,
+      dayjsDateProvider
     );
   });
 
