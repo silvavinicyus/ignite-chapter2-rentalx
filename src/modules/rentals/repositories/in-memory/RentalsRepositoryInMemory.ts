@@ -32,8 +32,19 @@ export default class RentalsRepositoryInMemory implements IRentalsRepository {
   }
 
   async findOpenRentalByUser(user_id: string): Promise<Rental> {
-    return this.rentals.find(
-      (rental) => rental.car_id === user_id && rental.end_date === null
+    const help = this.rentals.find(
+      (rental) => rental.user_id === user_id && !rental.end_date
     );
+    console.log(help);
+
+    return help;
+  }
+
+  async findById(id: string): Promise<Rental> {
+    return this.rentals.find((rental) => rental.id === id);
+  }
+
+  async findByUser(user_id: string): Promise<Rental[]> {
+    return this.rentals.filter((rental) => rental.user_id === user_id);
   }
 }
