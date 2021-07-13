@@ -35,7 +35,6 @@ export default class RentalsRepositoryInMemory implements IRentalsRepository {
     const help = this.rentals.find(
       (rental) => rental.user_id === user_id && !rental.end_date
     );
-    console.log(help);
 
     return help;
   }
