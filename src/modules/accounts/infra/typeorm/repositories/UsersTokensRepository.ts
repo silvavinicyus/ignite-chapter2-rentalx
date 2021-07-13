@@ -43,4 +43,10 @@ export default class UsersTokensRepository implements IUsersTokensRepository {
 
     return userToken;
   }
+
+  async findByRefreshToken(refresh_token: string): Promise<UserTokens> {
+    const userToken = this.repository.findOne({ refresh_token });
+
+    return userToken;
+  }
 }
